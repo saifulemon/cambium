@@ -8,7 +8,7 @@
 4. local supply sec
 5. global sec
 6. mission sec
-7. 
+7. we-work-sec
 *************************************************************/
 
 /* 1. Default CSS */
@@ -262,6 +262,36 @@ section.mission-sec .mission-txt p {
   font-family: var(--font-en-primary);
   font-weight: 300;
   line-height: 1.4;
+}
+
+/* 7. we-work-sec */
+.we-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.we-work .title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.work-logo {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.work-logo img {
+  max-width: 80%;
+}
+
+.logo2 {
+  grid-template-columns: repeat(3, 1fr);
+  padding-inline: 8rem;
 }
 
 /******* Re-usable style *******/
