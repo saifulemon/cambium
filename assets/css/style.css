@@ -7,7 +7,7 @@
 3. our customer sec
 4. local supply sec
 5. global sec
-6. 
+6. mission sec
 7. 
 *************************************************************/
 
@@ -58,6 +58,10 @@ section {
 
 a {
   color: unset;
+}
+
+u {
+  text-decoration: underline !important;
 }
 
 /* 2. we do sec */
@@ -230,6 +234,34 @@ section.global-sec {
 section.global-sec .title {
   color: var(--color-white);
   width: 47%;
+}
+
+/* 6. mission sec */
+section.mission-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--Theme-color);
+  color: var(--color-white);
+}
+
+section.mission-sec .title {
+  color: var(--color-white);
+}
+
+section.mission-sec .mission-txt {
+  width: 50%;
+  margin: 0 auto;
+}
+
+section.mission-sec .mission-txt p {
+  font-size: 2.5rem;
+  font-family: var(--font-en-primary);
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 /******* Re-usable style *******/
