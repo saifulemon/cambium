@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,600&display=swap');
+
+/********************* Design Steps ************************
+1. Default CSS
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+*************************************************************/
+
+/* 1. Default CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --Theme-color: #0A3D4C;
+  --body-font-family: 'Poppins', sans-serif;
+  --title-font-family: 'Jost', sans-serif;
+}
+
+html {
+  line-height: 1.15;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--body-font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: relative;
+}
+
+a {
+  color: unset;
+}
+
+/******* Re-usable style *******/
+.container {
+  max-width: 1420px;
+  margin-inline: auto;
+  width: 100%;
+  padding-inline: 15px;
+  position: relative;
+}
