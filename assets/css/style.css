@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,600&display=swap");
 
 /********************* Design Steps ************************
 1. Default CSS
-2. 
+2. we do sec
 3. 
 4. 
 5. 
@@ -25,9 +25,17 @@
 }
 
 :root {
-  --Theme-color: #0A3D4C;
-  --body-font-family: 'Poppins', sans-serif;
-  --title-font-family: 'Jost', sans-serif;
+  --Theme-color: #0a3d4c;
+  --title-font-family: "Jost", sans-serif;
+  --font-en-primary: "Poppins", sans-serif;
+  --heading-color: #000000;
+  --heading-secondary-color: #d39d27;
+  --primary-color: #003d4c;
+  --text-color: #777777;
+  --btn-bg-color: #d39d27;
+  --error-text-color: #f2545b;
+  --color-white: #fff;
+  --color-black: #000000;
 }
 
 html {
@@ -42,18 +50,123 @@ body {
   font-family: var(--body-font-family);
   font-size: 1.6rem;
   font-weight: 400;
-  position: relative;
+}
+
+section {
+  padding-block: 30px;
 }
 
 a {
   color: unset;
 }
 
+/* 2. we do sec */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.wrapper .left-do,
+.right-do {
+  height: 410px;
+}
+
+.wrapper .left-do img {
+  display: block;
+  margin-left: auto;
+  max-width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper .right-do {
+  padding-left: 35px;
+}
+
+.wrapper .right-do strong {
+  font-family: var(--font-en-primary);
+  display: block;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-top: 6rem;
+}
+
+.wrapper .right-do h3 {
+  margin-block: 40px;
+  font-family: var(--title-font-family);
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding-right: 120px;
+}
+
 /******* Re-usable style *******/
 .container {
-  max-width: 1420px;
+  max-width: 1487px;
   margin-inline: auto;
   width: 100%;
   padding-inline: 15px;
-  position: relative;
+}
+
+.btn {
+  font-family: var(--title-font-family);
+  font-weight: 500;
+  color: var(--color-white);
+  padding: 1.3rem 2.171rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: var(--btn-bg-color);
+}
+
+/********** mobile responsive ***********/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .wrapper .left-do,
+  .right-do {
+    height: 500px !important;
+  }
+
+  .wrapper .right-do h3 {
+    font-size: 3rem;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .wrapper .left-do img {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .wrapper .right-do {
+    padding-left: 0;
+  }
+
+  .wrapper .right-do h3 {
+    padding-right: 0;
+    font-size: 2.8rem;
+  }
+
+  .btn {
+    padding: 1.3rem 6rem;
+  }
+}
+
+@media (max-width: 360px) {
+ .btn {
+    padding: 1.3rem 1rem;
+  }
 }
