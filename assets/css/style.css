@@ -6,7 +6,7 @@
 2. we do sec
 3. our customer sec
 4. local supply sec
-5. 
+5. global sec
 6. 
 7. 
 *************************************************************/
@@ -211,6 +211,27 @@ a {
   font-family: var(--font-en-primary);
 }
 
+/* 5. global sec */
+section.global-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: var(--color-white);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/global-bg.jpg') no-repeat center center !important;
+}
+
+section.global-sec .title {
+  color: var(--color-white);
+  width: 47%;
+}
+
 /******* Re-usable style *******/
 .container {
   max-width: 1487px;
@@ -267,6 +288,10 @@ a {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .marquee span {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 426px) {
@@ -296,6 +321,10 @@ a {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .marquee span {
+    font-size: 3.7rem;
   }
 }
 
