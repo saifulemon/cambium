@@ -294,6 +294,25 @@ section.mission-sec .mission-txt p {
   padding-inline: 8rem;
 }
 
+.wrapper2 .left-do, .wrapper2 .right-do {
+  height: auto;
+}
+
+.wrapper2 .left-do img {
+  height: auto;
+    padding-top: 119px;
+    max-width: 70%;
+}
+
+.right-do p {
+  max-width: 80%;
+  font-size: 2.5rem;
+  font-family: var(--font-en-primary);
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+}
+
 /******* Re-usable style *******/
 .container {
   max-width: 1487px;
