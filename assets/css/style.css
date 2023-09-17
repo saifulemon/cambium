@@ -9,6 +9,7 @@
 5. global sec
 6. mission sec
 7. we-work-sec
+8. traece sec
 *************************************************************/
 
 /* 1. Default CSS */
@@ -227,8 +228,8 @@ section.global-sec {
     background-size: cover;
     background-repeat: repeat-x;
     background-position-y: bottom;
-    background-attachment: fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/global-bg.jpg') no-repeat center center !important;
+    background-attachment: local;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/global-bg.jpg')!important;
 }
 
 section.global-sec .title {
@@ -313,6 +314,31 @@ section.mission-sec .mission-txt p {
   margin-bottom: 2.5rem;
 }
 
+/* 8. traece sec */
+.traece-right img {
+  margin-left: 0 !important;
+  height: 92% !important;
+}
+
+.traece-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.traece-left h3 {
+  padding-right: 0 !important;
+}
+
+.traece-left p {
+  margin-bottom: 0 !important;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  max-width: 67%;
+}
+
+
 /******* Re-usable style *******/
 .container {
   max-width: 1487px;
@@ -328,6 +354,7 @@ section.mission-sec .mission-txt p {
   padding: 1.3rem 2.171rem;
   text-align: center;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .btn-primary {
